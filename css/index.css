@@ -172,7 +172,7 @@ p {
   margin-bottom: 25px;
 }
 .navigation .logo {
-  width: 50px;
+  width: 30px;
   margin-left: 5%;
 }
 .navigation .links {
@@ -219,29 +219,25 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.pr-top-section h1 {
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  font-size: 6rem;
+  background: #F5F5F5;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .pr-top-section div {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
 }
 .pr-top-section div img {
-  width: 60%;
+  width: 55%;
   padding-right: 20px;
-  border-radius: 20px;
 }
 .pr-top-section .pr-get-started {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 .pr-top-section .pr-get-started h2 {
   padding-bottom: 20px;
@@ -266,6 +262,7 @@ footer p {
 .pr-middle-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -274,15 +271,22 @@ footer p {
   width: 90%;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-size: 1.8rem;
 }
 .pr-bottom-section {
   display: flex;
-  flex-direction: flex-wrap;
-  border: 1px solid red;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #F5F5F5;
 }
 .pr-bottom-section img {
-  width: 60px;
-}
-.pr-bottom-section h3 {
   width: 50%;
+}
+.pr-bottom-section p {
+  margin-top: 100px;
+  width: 50%;
+  text-align: left;
+  font-size: 2.4rem;
 }

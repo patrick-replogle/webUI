@@ -1,1 +1,86 @@
 //Patrick's styles
+
+.pr-top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 6rem;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    
+        img{
+            width: 60%;
+            padding-right: 20px;
+            border-radius: 20px;
+        }
+    }
+
+    .pr-get-started {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            padding-bottom: 20px;
+            font-size: 4rem;
+        }
+        button {
+            color: @buttonColor;
+            background: @buttonBackground;
+            border: none;
+            padding: 10px 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.6rem;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            
+            &:hover {
+             background: darken(@buttonBackground, 10%);
+             color: darken(@buttonColor, 10%);
+            }  
+        }
+    }
+}
+
+.pr-middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 4px dashed gray;
+
+    p {
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.pr-bottom-section {
+    display: flex;
+    flex-direction: flex-wrap;
+    border: 1px solid red;
+
+    img {
+        width: 60px;
+    }
+
+    h3 {
+        width: 50%;
+    }
+
+}

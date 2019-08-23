@@ -172,7 +172,7 @@ p {
   margin-bottom: 25px;
 }
 .navigation .logo {
-  width: 60px;
+  width: 50px;
   margin-left: 5%;
 }
 .navigation .links {
@@ -269,7 +269,6 @@ footer p {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-bottom: 4px dashed gray;
 }
 .pr-middle-section p {
   width: 90%;

@@ -252,7 +252,6 @@ footer p {
 }
 .pr-top-section img {
   width: 55%;
-  padding-right: 20px;
 }
 @media (max-width: 500px) {
   .pr-top-section img {
@@ -324,6 +323,30 @@ footer p {
     margin-bottom: 20px;
     width: 90%;
   }
+}
+h3 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: bold;
+}
+h3 span {
+  display: inline-block;
+  padding: 0 10px;
+  background: white;
+}
+h3:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: black;
 }
 .pr-bottom-section {
   display: flex;

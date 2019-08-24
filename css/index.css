@@ -172,31 +172,47 @@ p {
   margin-left: 5%;
   margin-right: 5%;
 }
-.navigation img {
+.navigation .pr-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation .pr-logo img {
   width: 30px;
 }
-.navigation #clippy {
-  margin-right: 62%;
+.navigation .pr-logo #clippy {
+  margin-left: 5%;
   text-decoration: none;
   color: black;
   font-size: 2.8rem;
   font-weight: bold;
 }
-.links {
+.navigation .links {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-right: 5%;
+  margin-left: -20%;
 }
-.links a {
+@media (max-width: 500px) {
+  .navigation .links {
+    margin-left: -40%;
+  }
+}
+.navigation .links a {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: black;
   font-size: 2rem;
   padding-right: 50px;
 }
-.links button {
+@media (max-width: 500px) {
+  .navigation .links a {
+    padding-right: 30px;
+  }
+}
+.navigation .links button {
   color: white;
   background: #415F85;
   border: none;
@@ -207,7 +223,7 @@ p {
   font-size: 1.6rem;
   border-radius: 4px;
 }
-.links button:hover {
+.navigation .links button:hover {
   background: #304763;
   color: #e6e6e6;
 }
@@ -261,6 +277,16 @@ footer p {
 .pr-top-section .pr-get-started h2 {
   padding-bottom: 20px;
   font-size: 4rem;
+}
+@media (max-width: 600px) {
+  .pr-top-section .pr-get-started h2 {
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .pr-top-section .pr-get-started h2 {
+    font-size: 4rem;
+  }
 }
 .pr-top-section .pr-get-started button {
   color: white;
@@ -402,7 +428,7 @@ footer p {
 @media (max-width: 500px) {
   .pr-bottom-section #pr-bottom-div img {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 }
 .pr-bottom-section #pr-bottom-div p {

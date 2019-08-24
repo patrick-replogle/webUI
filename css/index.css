@@ -372,7 +372,7 @@ h3:before {
   .pr-bottom-section #pr-bottom-top-div {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: -40px;
+    margin-top: -110px;
   }
 }
 .pr-bottom-section #pr-bottom-top-div img {
@@ -437,7 +437,7 @@ h3:before {
   flex-wrap: wrap;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 @media (max-width: 500px) {
   .pr-bottom-section #pr-bottom-div {

@@ -448,7 +448,27 @@ h3:before {
 .pr-bottom-section #pr-bottom-div img {
   width: 50%;
 }
-
+@media (max-width: 500px) {
+  .pr-bottom-section #pr-bottom-div img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+.pr-bottom-section #pr-bottom-div p {
+  margin-top: 100px;
+  width: 47%;
+  margin-left: 3%;
+  text-align: left;
+  font-size: 2.2rem;
+}
+@media (max-width: 500px) {
+  .pr-bottom-section #pr-bottom-div p {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 .df-intro-section {
   display: flex;
   flex-direction: column;
@@ -504,25 +524,4 @@ h3:before {
 .df-pictures-section .df-team-member .img-wrap:hover .about-hover-description {
   visibility: visible;
   opacity: 1;
-
-@media (max-width: 500px) {
-  .pr-bottom-section #pr-bottom-div img {
-    width: 100%;
-    margin-bottom: 0;
-  }
-}
-.pr-bottom-section #pr-bottom-div p {
-  margin-top: 100px;
-  width: 47%;
-  margin-left: 3%;
-  text-align: left;
-  font-size: 2.2rem;
-}
-@media (max-width: 500px) {
-  .pr-bottom-section #pr-bottom-div p {
-    margin-left: 0;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
 }

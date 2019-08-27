@@ -4,77 +4,65 @@
   justify-content: space-between;
   margin-top: 25px;
   margin-bottom: 25px;
-  background: green;
-  .logo {
-    width: 50px;
-    margin-left: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  .pr-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 30px;
+    }
+
+    #clippy {
+      margin-left: 5%;
+      text-decoration: none;
+      color: black;
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
   }
+
   .links {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 5%;
-    margin-right: 5%;
+    justify-content: center;
+    margin-left: -20%;
 
-    .pr-logo {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        img {
-            width: 30px;
-        }
-    
-        #clippy {
-            margin-left: 5%;
-            text-decoration: none; 
-            color: black;
-            font-size: 2.8rem;
-            font-weight: bold;
-        }
+    @media @phone {
+      margin-left: -40%;
     }
 
-    .links {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-left: -20%;
+    a {
+      .font();
+      text-decoration: none;
+      color: black;
+      font-size: 2rem;
+      padding-right: 50px;
 
-        @media @phone {
-            margin-left: -40%;
-        }
-
-        a {
-            .font();
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-            padding-right: 50px;
-
-            @media @phone {
-                padding-right: 30px;
-            }
-        }
-
-        button {
-           color: @buttonColor;
-           background: @buttonBackground;
-           border: none;
-           padding: 5px 25px;
-           text-align: center;
-           text-decoration: none;
-           display: inline-block;
-           font-size: 1.6rem;
-           border-radius: 4px;
-
-           &:hover {
-            background: darken(@buttonBackground, 10%);
-            color: darken(@buttonColor, 10%);
-           }
-        }
+      @media @phone {
+        padding-right: 30px;
+      }
     }
+
+    button {
+      color: @buttonColor;
+      background: @buttonBackground;
+      border: none;
+      padding: 5px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.6rem;
+      border-radius: 4px;
+
+      &:hover {
+        background: darken(@buttonBackground, 10%);
+        color: darken(@buttonColor, 10%);
+      }
+    }
+  }
 }

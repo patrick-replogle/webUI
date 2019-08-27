@@ -35,7 +35,7 @@
 
         h2 {
             padding-bottom: 20px;
-            font-size: 4rem;
+            font-size: 4.8rem;
 
             @media @tablet {
                 font-size: 3.8rem;
@@ -50,13 +50,21 @@
             color: @buttonColor;
             background: @buttonBackground;
             border: none;
-            padding: 10px 50px;
+            padding: 10px 60px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 1.6rem;
             border-radius: 4px;
             margin-bottom: 10px;
+
+            @media @tablet {
+                padding: 10px 40px; 
+            }
+
+            @media @phone {
+                padding: 10px 60px;
+            }
             
             &:hover {
              background: darken(@buttonBackground, 10%);
@@ -101,33 +109,24 @@ h3 {
         padding:0 10px;
         background:white;
     }
-}
 
-h3:before {
-    content:"";
-    display:block;
-    position:absolute;
-    z-index:-1;
-    left:0;
-    right:0;
-    top:50%;
-    height:1px;
-    background:black;
+    &:before {
+        content:"";
+        display:block;
+        position:absolute;
+        z-index:-1;
+        left:0;
+        right:0;
+        top:50%;
+        height:1px;
+        background:black;
+    }
 }
    
 .pr-bottom-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    h3 {
-        margin-bottom: 50px;
-        font-weight: bold;
-
-        @media @phone {
-            margin-bottom: -20px;
-        }
-    }
 
     #pr-bottom-top-div {
         display: flex;

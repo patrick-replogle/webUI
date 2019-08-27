@@ -2,26 +2,22 @@
 
 .pr-top-section {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
 
-    h1 {
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 40px;
-        font-size: 6rem;
+    @media @phone {
+        display: flex;
+        flex-direction: column;
     }
 
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 90%;
-    
-        img{
-            width: 60%;
-            padding-right: 20px;
-            border-radius: 20px;
+    img{
+        width: 55%;
+        
+        @media @phone {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 25px;
         }
     }
 
@@ -30,56 +26,216 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 50%;
+
+        @media @phone {
+            width: 100%;
+            border-top: 30px;
+        }
 
         h2 {
             padding-bottom: 20px;
-            font-size: 4rem;
+            font-size: 4.8rem;
+
+            @media @tablet {
+                font-size: 3.8rem;
+            }
+
+            @media @phone {
+                font-size: 4rem;
+            }
         }
+
         button {
             color: @buttonColor;
             background: @buttonBackground;
             border: none;
-            padding: 10px 50px;
+            padding: 10px 60px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 1.6rem;
             border-radius: 4px;
             margin-bottom: 10px;
+
+            @media @tablet {
+                padding: 10px 40px; 
+            }
+
+            @media @phone {
+                padding: 10px 60px;
+            }
             
             &:hover {
              background: darken(@buttonBackground, 10%);
              color: darken(@buttonColor, 10%);
-            }  
-        }
+            }
+        }   
     }
 }
 
 .pr-middle-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     p {
         width: 90%;
         margin-top: 30px;
         margin-bottom: 30px;
+        font-size: 1.8rem;
+
+        @media @phone {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 90%;
+        }
     }
 }
 
+h3 {
+    position:relative;
+    text-align:center;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: bold;
+
+    span {
+        display:inline-block;
+        padding:0 10px;
+        background:white;
+    }
+
+    &:before {
+        content:"";
+        display:block;
+        position:absolute;
+        z-index:-1;
+        left:0;
+        right:0;
+        top:50%;
+        height:1px;
+        background:black;
+    }
+}
+   
 .pr-bottom-section {
     display: flex;
-    flex-direction: flex-wrap;
-    border: 1px solid red;
+    flex-direction: column;
+    align-items: center;
 
-    img {
-        width: 60px;
+    #pr-bottom-top-div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        @media @phone {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: -110px;
+        }
+    
+        img {
+            width: 50%;
+
+            @media @phone {
+                width: 100%;
+            }
+        }
+    
+        p {
+            margin-top: 100px;
+            width: 47%;
+            margin-left: 3%;
+            text-align: left;
+            font-size: 2.2rem;
+
+            @media @phone {
+                width: 90%;
+                margin-bottom: 20px;
+                margin-left: 0;
+            }
+        }
+    }       
+    
+    #pr-bottom-middle-div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        p {
+            margin-top: 100px;
+            width: 47%;
+            //margin-left: 3%;
+            text-align: left;
+            font-size: 2.2rem;
+
+            @media @phone {
+                width: 90%;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+        }
+
+        img {
+            width: 50%;
+            margin-left: 3%;
+
+            @media @phone {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
     }
 
-    h3 {
-        width: 50%;
-    }
+    #pr-bottom-div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 30px;
 
+        @media @phone {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        img {
+            width: 50%;
+
+            @media @phone {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+    
+        p {
+            margin-top: 100px;
+            width: 47%;
+            margin-left: 3%;
+            text-align: left;
+            font-size: 2.2rem;
+
+            @media @phone {
+                margin-left: 0;
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
+
+
+

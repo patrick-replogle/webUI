@@ -191,7 +191,7 @@ p {
 }
 .navigation .links button {
   color: white;
-  background: #415F85;
+  background: #415f85;
   border: none;
   padding: 5px 25px;
   text-align: center;
@@ -208,7 +208,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #F5F5F5;
+  background: #f5f5f5;
   margin-top: 20px;
   height: 80px;
 }
@@ -249,7 +249,7 @@ footer p {
 }
 .pr-top-section .pr-get-started button {
   color: white;
-  background: #415F85;
+  background: #415f85;
   border: none;
   padding: 10px 50px;
   text-align: center;
@@ -285,4 +285,60 @@ footer p {
 }
 .pr-bottom-section h3 {
   width: 50%;
+}
+.df-intro-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto auto;
+}
+.df-intro-section h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.df-intro-section p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.df-pictures-section {
+  padding: 20px;
+  display: flex;
+  flex-wrap: row;
+}
+.df-pictures-section .df-team-member {
+  width: 25%;
+  height: auto;
+  padding: 5px;
+}
+.df-pictures-section .df-team-member img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.df-pictures-section .df-team-member h2 {
+  padding-top: 10px;
+  padding-bot: 10px;
+  text-align: center;
+}
+.df-pictures-section .df-team-member .img-wrap {
+  position: relative;
+}
+.df-pictures-section .df-team-member .img-wrap .about-hover-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  color: #fff;
+  background: rgba(29, 106, 154, 0.5);
+  text-align: center;
+  transition: opacity 0.2s, visibility 0.2s;
+  opacity: 0;
+  border-radius: 8px;
+}
+.df-pictures-section .df-team-member .img-wrap:hover .about-hover-description {
+  visibility: visible;
+  opacity: 1;
 }

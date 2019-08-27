@@ -1,40 +1,40 @@
 .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  .logo {
+    width: 50px;
+    margin-left: 5%;
+  }
+  .links {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    .logo {
-        width: 50px;
-        margin-left: 5%;
+    justify-content: center;
+    margin-right: 5%;
+    a {
+      .font();
+      text-decoration: none;
+      color: black;
+      font-size: 2rem;
+      padding-right: 50px;
     }
-    .links {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-right: 5%;
-        a {
-            .font();
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-            padding-right: 50px;
-        }
-        button {
-           color: @buttonColor;
-           background: @buttonBackground;
-           border: none;
-           padding: 5px 25px;
-           text-align: center;
-           text-decoration: none;
-           display: inline-block;
-           font-size: 1.6rem;
-           border-radius: 4px;
-           &:hover {
-            background: darken(@buttonBackground, 10%);
-            color: darken(@buttonColor, 10%);
-           }
-        }
+    button {
+      color: @buttonColor;
+      background: @buttonBackground;
+      border: none;
+      padding: 5px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.6rem;
+      border-radius: 4px;
+      &:hover {
+        background: darken(@buttonBackground, 10%);
+        color: darken(@buttonColor, 10%);
+      }
     }
- }
+  }
+}
